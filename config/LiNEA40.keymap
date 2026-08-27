@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -180,7 +180,7 @@
 &trans  &trans  &trans         &kp LG(F10)  &kp LA(LS(LG(SEMI)))                                &trans               &trans  &trans  &trans  &trans
 &trans  &trans  &trans         &trans       &kp LG(LA(LS(N0)))                                  &kp RC(UP_ARROW)     &trans  &trans  &trans  &trans
 &trans  &trans  &Horipu630811  &Horipu0811  &horipu                                             &kp LC(DOWN_ARROW)   &trans  &trans  &trans  &trans
-&trans  &trans  &trans         &trans       &kp LC(LG(NUMBER_4))  &trans    &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)          &trans  &trans  &trans
+&trans  &trans  &trans         &trans       &kp LG(LS(NUMBER_4))  &trans    &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)          &trans  &trans  &trans
             >;
         };
 
