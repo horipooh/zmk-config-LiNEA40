@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -169,10 +169,10 @@
 
         MARK {
             bindings = <
-&kp EXCL     &kp N7        &kp N8        &kp N9        &kp COLON                      &kp LA(LC(LEFT_ARROW))  &kp LA(LC(D))  &kp LA(LC(RET))  &kp LA(LC(T))  &kp LA(LC(RIGHT_ARROW))
-&kp PLUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HASH                       &kp LEFT_PARENTHESIS    &mkp MB1       &trans           &mkp MB2       &trans
-&kp COMMA    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AT_SIGN                    &kp RIGHT_PARENTHESIS   &trans         &kp SLASH        &trans         &kp QUESTION
-&kp PERCENT  &kp N0        &kp PERIOD    &trans        &trans       &trans    &trans  &trans                                 &trans           &trans         &trans
+&kp EXCL   &kp N7        &kp N8        &kp N9        &kp COLON                      &kp LA(LC(LEFT_ARROW))  &kp LA(LC(D))  &kp LA(LC(RET))        &kp LA(LC(T))  &kp LA(LC(RIGHT_ARROW))
+&kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp HASH                       &kp LEFT_PARENTHESIS    &mkp MB1       &kp RA(RC(RG(RS(F))))  &mkp MB2       &trans
+&kp COMMA  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp AT_SIGN                    &kp RIGHT_PARENTHESIS   &kp UNDER      &kp SLASH              &trans         &kp QUESTION
+&kp LCTRL  &kp N0        &trans        &kp PERIOD    &trans       &trans    &trans  &trans                                 &trans                 &trans         &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_UP C_VOLUME_DOWN>;
